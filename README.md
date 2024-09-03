@@ -47,11 +47,11 @@ Os dados foram filtrados para garantir que apenas documentos com resumos preench
 
 3. **Acesse a API:**
 
-   A API estará disponível em: `http://127.0.0.1:3942`.
+   A API estará disponível em: `http://10.103.0.28:3942`.
 
 ### Documentação Interativa
 
-Uma documentação interativa da API está disponível em: `http://127.0.0.1:3942/docs`.
+Uma documentação interativa da API está disponível em: `http://10.103.0.28:3942/docs`.
 
 ## Casos de Uso
 
@@ -60,19 +60,19 @@ Aqui estão três exemplos de uso para testar a API:
 ### 1. Retornando 10 Documentos
 
 - **Descrição:** Este caso de uso retorna uma lista completa de 10 documentos mais relevantes para a consulta dada.
-- **URL:** [http://127.0.0.1:3942/query?query=deep+learning](http://127.0.0.1:3942/query?query=deep+learning)
+- **URL:** [http://10.103.0.28:3942/query?query=deep+learning](http://10.103.0.28:3942/query?query=deep+learning)
 - **Explicação:** A consulta "deep learning" é ampla e popular, gerando muitos resultados relevantes. Por isso, a API retorna o número máximo de documentos permitidos (10), garantindo que o usuário obtenha uma lista diversificada de papers relevantes sobre o tema.
 
 ### 2. Retornando Entre 1 a 9 Documentos
 
 - **Descrição:** Este caso de uso retorna entre 1 e 9 documentos, mostrando que a API pode lidar com consultas menos comuns ou mais específicas.
-- **URL:** [http://127.0.0.1:3942/query?query=Zebrafish%20and%20Medaka](http://127.0.0.1:3942/query?query=Zebrafish%20and%20Medaka)
+- **URL:** [http://10.103.0.28:3942/query?query=Zebrafish%20and%20Medaka](http://10.103.0.28:3942/query?query=Zebrafish%20and%20Medaka)
 - **Explicação:** A consulta "Zebrafish and Medaka" é mais específica e restrita, resultando em menos documentos que atendem aos critérios de relevância. Dependendo do conteúdo da base de dados, a API pode retornar de 1 a 9 documentos.
 
 ### 3. Retornando Algo Não Óbvio
 
 - **Descrição:** Este caso de uso demonstra um resultado menos esperado, onde a consulta não parece diretamente relacionada aos documentos retornados, mas ainda pode fornecer insights valiosos.
-- **URL:** [http://127.0.0.1:3942/query?query=quantum+mechanics+influence+on+machine+learning](http://127.0.0.1:3942/query?query=quantum+mechanics+influence+on+machine+learning)
+- **URL:** [http://10.103.0.28:3942/query?query=quantum+mechanics+influence+on+machine+learning](http://10.103.0.28:3942/query?query=quantum+mechanics+influence+on+machine+learning)
 - **Explicação:** A consulta "quantum mechanics influence on machine learning" é interdisciplinar e incomum, o que pode levar a resultados não óbvios. A maioria dos papers pode não abordar diretamente a interseção exata entre esses campos, mas documentos relacionados que exploram aspectos avançados de algoritmos de aprendizado de máquina ou teoria quântica podem ser recomendados, oferecendo uma perspectiva inovadora que não é imediatamente evidente.
 
 ## Contribuições
