@@ -20,4 +20,4 @@ pip3 install -r requirements.txt
 
 # Executa a API
 echo "Executando a API..."
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app:app --host 0.0.0.0 --port 3942 --reload

@@ -10,4 +10,4 @@ pip install -r requirements.txt
 
 # Executar a API
 Write-Output "Executando a API..."
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app:app --host 0.0.0.0 --port 3942 --reload
