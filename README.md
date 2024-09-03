@@ -1,6 +1,6 @@
 # API de Recomendação de Papers
 
-Este repositório contém uma API desenvolvida com FastAPI para recomendar papers científicos com base em uma consulta de texto. A API utiliza um modelo de recomendação baseado em TF-IDF para calcular a relevância dos documentos com base na entrada do usuário.
+Este repositório contém uma API desenvolvida com FastAPI para recomendar papers científicos relacionados à pesquisa de doenças durante a pandemia de COVID com base em uma consulta de texto. A API utiliza um modelo de recomendação baseado em TF-IDF para calcular a relevância dos documentos com base na entrada do usuário.
 
 ## Base de Dados
 
@@ -73,7 +73,7 @@ Aqui estão três exemplos de uso para testar a API:
 
 - **Descrição:** Este caso de uso demonstra um resultado menos esperado, onde a consulta não parece diretamente relacionada aos documentos retornados, mas ainda pode fornecer insights valiosos.
 - **URL:** [http://10.103.0.28:3942/query?query=quantum+mechanics+influence+on+machine+learning](http://10.103.0.28:3942/query?query=quantum+mechanics+influence+on+machine+learning)
-- **Explicação:** A consulta "quantum mechanics influence on machine learning" é interdisciplinar e incomum, o que pode levar a resultados não óbvios. A maioria dos papers pode não abordar diretamente a interseção exata entre esses campos, mas documentos relacionados que exploram aspectos avançados de algoritmos de aprendizado de máquina ou teoria quântica podem ser recomendados, oferecendo uma perspectiva inovadora que não é imediatamente evidente.
+- **Explicação:** A consulta "quantum mechanics influence on machine learning" é interdisciplinar, incomum e não tem grande relação com o tema, o que pode levar a resultados não óbvios. A maioria dos papers pode não abordar diretamente a interseção exata entre esses campos e talvez nem abordá-los por inteiro, mas documentos relacionados que exploram aspectos avançados de algoritmos de aprendizado de máquina ou teoria quântica podem ser recomendados, oferecendo uma perspectiva inovadora que não é imediatamente evidente e geralmente não é analisada em um contexto de biologia e virologia.
 
 ## Contribuições
 
